@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - SceneIt</title>
+</head>
+<body>
+    <h1 th:text="'Movies in ' + ${genre} + ' Genre'"></h1>
+    <ul>
+        <li th:each="movie : ${movies}">
+            <h2 th:text="${movie.title}"></h2>
+            <p th:text="'Rating: ' + ${movie.voteAverage}"></p>
+            <p th:text="${movie.overview}"></p>
+        </li>
+    </ul>
+</body>
+</html>
