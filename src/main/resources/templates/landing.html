@@ -59,7 +59,7 @@
         }
 
         .genre-item:hover .genre-image {
-            transform: scale(1.1); /*enlarge the image on hover */
+            transform: scale(1.1); /* enlarge the image on hover */
         }
 
         .genre-button {
@@ -67,6 +67,7 @@
             bottom: 15%;
             left: 50%;
             transform: translateX(-50%);
+            transform-origin: center; 
             padding: 15px 30px;
             font-size: 18px;
             color: rgba(255, 255, 255, 0.9);
@@ -80,7 +81,7 @@
 
         .genre-button:hover {
             background-color: rgba(0, 0, 0, 0.7); /* darken button on hover */
-            transform: scale(1.1); /* enlarge button */
+            transform: translateX(-50%) scale(1.1); /* enlarge button */
         }
     </style>
 </head>
